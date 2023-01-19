@@ -10,6 +10,7 @@
 }
 
 .wrapper{
+    width: 100%;
     max-width: 500px;
     height: 700px;
     background: rgb(18, 18, 18);
@@ -51,7 +52,6 @@
 .changeInput{
     padding: 10px 15px;
     width: 100%;
-    max-width: 350px;
     border: none;
     outline: none;
     border-radius: 10px;
@@ -61,6 +61,7 @@
     padding: 10px 30px;
     border: none;
     border-radius: 10px;
+    margin-left: 10px;
 }
 .clearList{
     padding: 8px 15px;
@@ -178,10 +179,5 @@
     .dates{
         display: flex;
         flex-direction: column;
-    }
-}
-@media(max-width: 1200px) {
-    .wrapper{
-        width: 500px;
     }
 }

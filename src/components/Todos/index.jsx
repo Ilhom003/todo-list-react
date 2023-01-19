@@ -79,10 +79,10 @@ class Todo extends React.Component {
                                 <div className="addedItem" key={id}>
                                     <h2 className={`${checked && 'green'} ${liked && 'yellow'}`}>{this.state.active?.id === id ? <input className="changedInput" onChange={onChangeTitle} name="subtitle" value={this.state.subtitle} type={'text'} /> : title}</h2>
                                     <div className="btns" >
-                                        <button className={`btn`} onClick={() => onCheck(id)}><i className={checked ? 'fa-solid fa-check-double' : 'fa-solid fa-check'}></i></button>
-                                        <button className={`btn ${liked && 'yellow'}`} onClick={() => onChangeColor(id)}><i className="fa-sharp fa-solid fa-star"></i></button>
-                                        <button className="btn delete_btn" onClick={() => onDelete(id)}><i className="fa-solid fa-trash"></i></button>
                                         <button className="btn" onClick={() => onEdit({ id, title,checked,liked }, this.state.active?.id === id)}>{this.state.active?.id === id ? <i className="fa-solid fa-floppy-disk"></i> : <i className="fa-solid fa-pen-to-square"> </i>}</button>
+                                        <button className="btn delete_btn" onClick={() => onDelete(id)}><i className="fa-solid fa-trash"></i></button>
+                                        <button className={`btn ${liked && 'yellow'}`} onClick={() => onChangeColor(id)}><i className="fa-sharp fa-solid fa-star"></i></button>
+                                        <button className={`btn`} onClick={() => onCheck(id)}><i className={checked ? 'fa-solid fa-check-double' : 'fa-solid fa-check'}></i></button>
                                     </div>
                                 </div>
                             )

@@ -112,20 +112,21 @@
     flex: 1;
     height: auto;
     max-width: 250px;
-    overflow: hidden;
-
+    overflow-x:auto;
 }
 
 
 .btns{
-    width: 130px;
-    min-width: 130px;
+    width: 100%;
+    width: 120px;
+    /* min-width: 100px; */
 }
 .btn{
     background:none;
     border: none;
     font-size: 20px;
-    margin: 0 0 0 10px;
+    float: right;
+    padding: 0 0 0 10px;
     color: white;
 }
 .search{
@@ -179,5 +180,15 @@
     .dates{
         display: flex;
         flex-direction: column;
+    }
+    .addedItem h2{
+        font-size: 20px;
+    }
+    .btn{
+        font-size: 18px;
+    }
+    .btns{
+        width: 100%;
+        width: 115px;
     }
 }
